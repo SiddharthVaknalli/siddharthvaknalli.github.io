@@ -1,0 +1,61 @@
+#outer {
+	position: absolute;
+	top: 60px;
+	height: 700px;
+	width: 100%;
+}
+
+#project-header {
+	top: 5%;
+	left: 40%;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+}
+
+#line {
+	position: absolute;
+	top: 15%;
+}
+
+#table {
+	top: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	min-height: 100%;
+	margin-bottom: 20px;
+}
+
+.title-td {
+	text-align: center;
+	border: 3px solid black;
+	border-bottom: none;
+	width: 33%;
+	height: 75px;
+}
+
+.title-link {
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.image-td {
+	text-align: center;
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	width: 33%;
+}
+
+.description-td {
+	background-color: #ffc199;
+	color: #0033cc;
+	text-align: center; 
+	border: 3px solid black;
+	width: 33%;
+	font-size: 24px;
+}
+
+

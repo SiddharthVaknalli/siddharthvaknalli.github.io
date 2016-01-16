@@ -1,0 +1,58 @@
+body {
+	margin: 0px 0px 0px 0px; /*To get rid of white border around webpage*/
+	overflow-x: hidden; /*To not allow horizontal scrolling*/
+	height: 100%;
+	background: url(light-blue-banner.jpg);
+}
+
+#navigation-bar {
+	position: fixed;
+	height: 60px;
+	z-index: 9999;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%; 
+	background-image: linear-gradient(#0033cc, #0033cc);
+}
+
+#nav-name {
+	position: absolute;
+	float: left;
+	margin-left: 5%;
+	color: white;
+	text-transform: uppercase;
+	top: -12%;
+}
+
+#nav-table {
+	height: 100%;
+	float: right;
+}
+
+.nav-td {
+	/*border: 1px solid white;*/
+	padding-right: 20px;
+	width: 160px;
+}
+
+.nav-link {
+	color: white;
+	font-size: 27px;
+	text-decoration: none;
+}
+
+a.nav-link:hover {
+	color: #00ffff;
+	font-size: 30px;
+}
+
+
+#footer {
+	height: 75px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%; 
+	background-image: linear-gradient(#0033cc, #0033cc);
+}
