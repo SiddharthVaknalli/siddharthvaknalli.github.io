@@ -1,60 +1,100 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
 	<title>Siddharth Vaknalli</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Tells Internet Explorer to use the latest rendering machine-->
+	<meta name="viewport" content="width = device-width, initial-scale = 1"><!--Set the page width to the size of the device and set the zoom level to 1-->
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arimo">
+	<link rel="stylesheet" type="text/css" href="general.css">
 
 </head>
 <body>
-	<div id="navigation-bar">
-		<a href="index.html">
-			<div id="nav-name">
-				<h1>Siddharth Vaknalli</h1>
+<div class="container">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div id="navbar-background" class="container-fluid">
+			<div class="navbar-header">
+				<!--For displaying a button when the screen size is too small instead of the navigation bar-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcollapse" aria-expanded="false">
+					<span class="sr-only"></span> <!--For hiding the options from the screen reader-->
+					<span class="icon-bar"></span> <!--For displaying the three horizontal lines on the button-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button> 
+				<a class="navbar-brand" href="#">Siddharth Vaknalli</a>
 			</div>
-		</a>
-		<table id="nav-table">
-			<tr>
-				<td class="nav-td">
-					<a class="nav-link" href="About.html">About Me</a>
-				</td>
-				<td class="nav-td">
-					<a class="nav-link" href="Portfolio.html">Portfolio</a>
-				</td>
-				<td class="nav-td">
-					<a class="nav-link" href="Resume.pdf">Resume</a>
-				</td>
-			</tr>
-		</table>
+			<div id="navbarcollapse" class="collapse navbar-collapse navbar-right">
+				<!--
+				<div class="btn-group">
+    				<button type="button" class="btn btn-default btn-lg">About</button>
+    				<button type="button" class="btn btn-default btn-lg">Portfolio</button>
+    				<button type="button" class="btn btn-default btn-lg">Contact</button>
+				</div>
+			-->
+				<ul class="nav navbar-nav">
+                	<li><a href="#">About Me</a></li>
+                	<li><a href="#">Portfolio</a></li>
+                	<li><a href="#">Contact</a></li>
+            	</ul>	
+			</div>
+		</div>
+	</nav>
+</div>
+
+<div class="jumbotron" id="wrapper">
+	<img id="wrapper-img" src="jumbotron-background.jpg">
+
+	<!--Left sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav"> 
+			<li><a href="https://github.com/SiddharthVaknalli">Github</a></li>
+			<li><a href="https://www.facebook.com/siddharth.vaknalli">Facebook</a></li>
+			<li><a href="https://ca.linkedin.com/in/siddharthvaknalli">LinkedIn</a></li>
+			<li><a href="Resume.pdf">Resume</a></li>
+		</ul>
 	</div>
-	<div id="intro">
-			<div id="profile-image">
-				<img id="my-image" src="MyPic.jpg" alt="Profile Image"/> 
-			</div>
-			<h1 id="intro-line">SIDDHARTH VAKNALLI</h1>
-			<h3 id="caption">A 1B Software Engineering student at the University of Waterloo.</h3>
-			<div id="left-images">
-				<a href="https://www.facebook.com/siddharth.vaknalli" style="display: block">
-					<img id="facebook-image" src="facebook_circle.png" alt="Facebook Link"/>
-				</a>
-				<div id="github">
-					<a href="https://github.com/SiddharthVaknalli">
-						<img id="github-image" src="github_circle2.png" alt="GitHub Link"/>
-					</a>
-				</div>
-			</div>
-			<div id="right-images">
-				<div id="mail">
-					<a href="mailto:sidd.v17@gmail.com">
-						<img id="mail-image" src="mail-icon.png" alt="Email Me!"/>
-					</a>
-				</div>
-				<div id="linkedin">
-					<a href="https://ca.linkedin.com/in/siddharthvaknalli">
-						<img id="linkedin-image" src="linkedin-circle.svg" alt="Linkedin Link"/>
-					</a>
-				</div>
-			</div>
+
+	<!--Main content-->	
+	<div id="page-content-wrapper">
+		<div>
+			<a href="#" id="right-sidebar-toggle" class="btn btn-default btn-large"></a>
+			<img class="img-responsive image-circle center-block" id="my-image" src="MyPic.jpg" alt="Profile Image"/> 
+			<div class="text-center">
+				<h1 class="text">Siddharth Vaknalli</h1>
+				<h3 class="text">Software Developer | Web Designer</h3>
+		</div>
 	</div>
+</div>
+
+<div class="jumbotron">
+
+</div>
+
+<!--Javascript and jQuery scripts for the Bootstrap framework -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Sidebar toggle script-->
+<script type="text/javascript">
+	$("#right-sidebar-toggle").click ( function (e) {
+		e.preventDefault ();
+		$("#wrapper").toggleClass("menuDisplayed");
+		//alert ($("#wrapper").width ()/5);
+		if ($("#sidebar-wrapper").width() >= ($("#wrapper").width() / 5 - 2) && $("#sidebar-wrapper").width() <= ($("#wrapper").width() / 5 + 2)) {
+			$("#sidebar-wrapper").animate ({
+    			width: '0%'
+  			}, "fast");
+		}
+		else {
+			$("#sidebar-wrapper").animate ({
+    			width: '20%'
+  			}, "fast");
+		}
+		
+	} )
+</script>
 </body>
 </html>

@@ -1,59 +1,89 @@
-body {
-	margin: 0px 0px 0px 0px; /*To get rid of white border around webpage*/
-	overflow-x: hidden; /*To not allow horizontal scrolling*/
+.container {
+	width: 100%;
+}
+
+#wrapper {
+	background-color: #26A69A;
+	width: 100%;
 	height: 100%;
-	/*background: url(light-blue-banner.jpg);*/
-	background-color: #00ccff;
 }
 
-#navigation-bar {
-	position: fixed;
-	height: 60px;
-	z-index: 9999;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	width: 100%; 
-	background-image: linear-gradient(#0033cc, #0033cc);
-}
-
-#nav-name {
+#wrapper-img {
 	position: absolute;
-	float: left;
-	margin-left: 5%;
-	color: white;
-	text-transform: uppercase;
-	top: -12%;
+	width: 100%;
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
-#nav-table {
+#navbarcollapse {
+	background-color: #dddfd4;
+}
+
+#navbar-background {
+	background-color: #dddfd4
+}
+
+#profile-image {
+	width: 15%;
+	height: 200px;	
+}
+
+#my-image {
+	margin-top: 1%;
+	margin-bottom: 5%;
+	max-width: 25%;
+	border: 5px solid #dddfd4;
+	border-radius: 100%;
+	width: 100%;
 	height: 100%;
-	float: right;
 }
 
-.nav-td {
-	/*border: 1px solid white;*/
-	padding-right: 20px;
-	width: 160px;
+#sidebar-wrapper {
+	z-index: 1; /*To make the links clickable with position: absolute */
+	position: absolute;
+	width: 0;
+	overflow-y: hidden;
+	background: #000000;
+	opacity: 0.7;
 }
 
-.nav-link {
-	color: white;
-	font-size: 27px;
+#page-content-wrapper {
+	position: absolute;
+	width: 100%;
+}
+
+/*Change the width of the sidebar to displayed
+#wrapper.menuDisplayed #sidebar-wrapper {
+	width: 20%;
+}
+*/
+
+#wrapper.menuDisplayed #page-content-wrapper #right-sidebar-toggle {
+	margin-left: 20%;
+	background: url("arrow-inverted.png");
+}
+
+.sidebar-nav {
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	text-indent: 20px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a {
+	display: block;
 	text-decoration: none;
+	color: #ddd;
 }
 
-a.nav-link:hover {
-	color: #00ffff;
-	font-size: 30px;
+.sidebar-nav li a:hover {
+	background: #16A085;
 }
 
-
-#footer {
-	height: 75px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	width: 100%; 
-	background-image: linear-gradient(#0033cc, #0033cc);
+.text {
+	font-family: Arimo, Arial, sans-serif;
+	color: white;
 }
