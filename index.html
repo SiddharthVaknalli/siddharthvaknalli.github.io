@@ -1,100 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Siddharth Vaknalli</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Tells Internet Explorer to use the latest rendering machine-->
-	<meta name="viewport" content="width = device-width, initial-scale = 1"><!--Set the page width to the size of the device and set the zoom level to 1-->
-	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arimo">
-	<link rel="stylesheet" type="text/css" href="general.css">
+    <title>Siddharth Vaknalli</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 </head>
-<body>
-<div class="container">
+    
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#myPage">SIDDHARTH VAKNALLI</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="header" class="jumbotron text-center">
+        <img src="images/MyPic.jpg" class="img-circle img-responsive center-block" id="my-image" alt="Me!">
+        <h1>Siddharth Vaknalli</h1> 
+        <p>Software Developer | Web Designer</p> 
+    </div>
+    
+    <div id="about" class="container-fluid bg-grey">
+        <div id="about-row" class="row text-center">
+            <div class="col-sm-6 col-sm-offset-3" id="transbox">
+                <h2 class="text-center" style="margin-bottom: 50px">About Me</h2>
+                <h4 style="margin-bottom: 40px">Hey there! I am a 1st year Software Engineering student at the University of Waterloo. I love programming and making new things! I am proficient in Java and C, and have exposure to web development using HTML, CSS and JavaScript. I look for a challenge in everything I do, and enjoy collaborating and mingling with people. Outside programming, my interests lie in playing table tennis and participating in public speaking competitions such as Model UN and DECA. I also have a keen interest in business and financial markets.</h4> 
+                <h4 style="margin-bottom: 40px">To learn more about my projects, keep reading or visit my Github page! You can also contact me or connect with me on the web!</h4>
+                <a href="Resume.pdf"><i class="fa fa-file-pdf-o fa-4x"></i><span style="font-size: 20px; padding-left: 10px">Resume</span></a>
+            </div>
+        </div>
+    </div>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div id="navbar-background" class="container-fluid">
-			<div class="navbar-header">
-				<!--For displaying a button when the screen size is too small instead of the navigation bar-->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcollapse" aria-expanded="false">
-					<span class="sr-only"></span> <!--For hiding the options from the screen reader-->
-					<span class="icon-bar"></span> <!--For displaying the three horizontal lines on the button-->
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button> 
-				<a class="navbar-brand" href="#">Siddharth Vaknalli</a>
-			</div>
-			<div id="navbarcollapse" class="collapse navbar-collapse navbar-right">
-				<!--
-				<div class="btn-group">
-    				<button type="button" class="btn btn-default btn-lg">About</button>
-    				<button type="button" class="btn btn-default btn-lg">Portfolio</button>
-    				<button type="button" class="btn btn-default btn-lg">Contact</button>
-				</div>
-			-->
-				<ul class="nav navbar-nav">
-                	<li><a href="#">About Me</a></li>
-                	<li><a href="#">Portfolio</a></li>
-                	<li><a href="#">Contact</a></li>
-            	</ul>	
-			</div>
-		</div>
-	</nav>
-</div>
+    <div id="portfolio" class="container-fluid text-center">
+        <h2 style="margin-top: 50px; margin-bottom: 50px">Portfolio</h2>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="project">
+                    <a href="https://github.com/SiddharthVaknalli/Ultimate-Chess">
+                        <img src="images/Chess2.png" alt="Chess">
+                    </a>
+                    <p style="font-size: 25px; margin-top: 20px; margin-bottom: 20px"><strong><a href="https://github.com/SiddharthVaknalli/Ultimate-Chess">Ultimate Chess</a></strong></p>
+                    <p>A rich Chess game for PC with single and multiplayer options! Incorporates an AI component to implement 4 levels of difficulty against the computer! Developed in Java using Eclipse. Heavily utilizes OOP principles and graphical components (Swing etc.) to model the game.</p>
+                </div>    
+            </div>
+            <div class="col-sm-4">
+                <div class="project">
+                    <a href="https://github.com/utk9/Priorify-Android">
+                        <img src="images/Priorify.png" alt="Priorify">
+                    </a>
+                    <p style="font-size: 25px; margin-top: 20px; margin-bottom: 20px"><strong><a href="https://github.com/utk9/Priorify-Android">Priorify!</a></strong></p>
+                    <p>An Android app that inputs a list of tasks and prioritizes them according to criteria set by the user. Primarily developed a back-end algorithm in Java which prioritizes tasks by accounting for their due dates, importances, difficulties and time frames as set by the user. Utilized OOP principles and comparison and sorting techniques to implement the algorithm.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="project">
+                    <a href="https://github.com/SiddharthVaknalli/Squeak-Home">
+                        <img src="images/SqueakHome.png" alt="Squeak Home">
+                    </a>
+                    <p style="font-size: 25px; margin-top: 20px; margin-bottom: 20px"><strong><a href="https://github.com/SiddharthVaknalli/Squeak-Home">Squeak Home!</a></strong></p>
+                    <p>A creative cat-and-mouse 2D maze game with 3 game-play modes. Utilized OOP principles and data structures to model different game components and used file input to simulate maze. Designed graphics using Swing and AWT toolkits and implemented automated screen scrolling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center" style="margin-bottom: 50px">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-2 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-3 col-sm-offset-2 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 form-group">
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-9 form-group">
+                    <button class="btn btn-default" type="submit">Send</button>
+                </div>
+            </div> 
+            <div class="row text-center">
+                <h4>You can also find more about me anywhere below!</h4>
+            </div>
+            <div class="row text-center">
+                <a href="https://github.com/SiddharthVaknalli"><i class="fa fa-github fa-3x awesome-icon"></i></a>
+                <a href="https://www.facebook.com/siddharth.vaknalli"><i class="fa fa-facebook-official fa-3x awesome-icon"></i></a>
+                <a href="https://ca.linkedin.com/in/siddharthvaknalli"><i class="fa fa-linkedin fa-3x awesome-icon"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer" class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p> © 2016 Siddharth Vaknalli All Rights Reserved</p> 
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!--Javascript for smooth scrolling (when clicking on navbar links) -->
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-<div class="jumbotron" id="wrapper">
-	<img id="wrapper-img" src="jumbotron-background.jpg">
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-	<!--Left sidebar -->
-	<div id="sidebar-wrapper">
-		<ul class="sidebar-nav"> 
-			<li><a href="https://github.com/SiddharthVaknalli">Github</a></li>
-			<li><a href="https://www.facebook.com/siddharth.vaknalli">Facebook</a></li>
-			<li><a href="https://ca.linkedin.com/in/siddharthvaknalli">LinkedIn</a></li>
-			<li><a href="Resume.pdf">Resume</a></li>
-		</ul>
-	</div>
+                // Store hash
+                var hash = this.hash;
 
-	<!--Main content-->	
-	<div id="page-content-wrapper">
-		<div>
-			<a href="#" id="right-sidebar-toggle" class="btn btn-default btn-large"></a>
-			<img class="img-responsive image-circle center-block" id="my-image" src="MyPic.jpg" alt="Profile Image"/> 
-			<div class="text-center">
-				<h1 class="text">Siddharth Vaknalli</h1>
-				<h3 class="text">Software Developer | Web Designer</h3>
-		</div>
-	</div>
-</div>
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
 
-<div class="jumbotron">
-
-</div>
-
-<!--Javascript and jQuery scripts for the Bootstrap framework -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<!--Sidebar toggle script-->
-<script type="text/javascript">
-	$("#right-sidebar-toggle").click ( function (e) {
-		e.preventDefault ();
-		$("#wrapper").toggleClass("menuDisplayed");
-		//alert ($("#wrapper").width ()/5);
-		if ($("#sidebar-wrapper").width() >= ($("#wrapper").width() / 5 - 2) && $("#sidebar-wrapper").width() <= ($("#wrapper").width() / 5 + 2)) {
-			$("#sidebar-wrapper").animate ({
-    			width: '0%'
-  			}, "fast");
-		}
-		else {
-			$("#sidebar-wrapper").animate ({
-    			width: '20%'
-  			}, "fast");
-		}
-		
-	} )
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            });
+        })
 </script>
 </body>
 </html>
