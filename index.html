@@ -38,10 +38,10 @@
     <div id="header" class="jumbotron text-center">
         <img src="images/MyPic.jpg" class="img-circle img-responsive center-block" id="my-image" alt="Me!">
         <h1>Siddharth Vaknalli</h1> 
-        <p>Software Developer | Web Designer</p> 
+        <h3>Software Developer |<br class="rwd-break" /> Web Designer</h3> 
     </div>
     
-    <div id="about" class="container-fluid bg-grey">
+    <div id="about" class="container-fluid bg-grey parallax-window" data-parallax="scroll" data-image-src="images/UWcampus.jpg">
         <div id="about-row" class="row text-center">
             <div class="col-sm-6 col-sm-offset-3" id="transbox">
                 <h2 class="text-center" style="margin-bottom: 50px">About Me</h2>
@@ -94,13 +94,13 @@
             <div class="col-sm-3 col-sm-offset-2 form-group">
                 <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
             </div>
-            <div class="row">
+            <div class="row center-block">
                 <div class="col-sm-8 col-sm-offset-2 form-group">
                     <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-2 col-sm-offset-9 form-group">
+                <div class="col-xs-2 col-xs-offset-9 form-group">
                     <button class="btn btn-default" type="submit">Send</button>
                 </div>
             </div> 
@@ -124,6 +124,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="parallax.js-1.4.2/parallax.js"></script> <!-- For implementing parallax scrolling -->
     
     <!--Javascript for smooth scrolling (when clicking on navbar links) -->
     <script>

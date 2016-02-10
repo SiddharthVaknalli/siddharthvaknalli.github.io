@@ -1,4 +1,8 @@
-#myPage {
+html {
+    overflow-x: hidden;
+}
+
+body {
     overflow-x: hidden;
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -13,10 +17,23 @@
     margin-bottom: 0;
 }
 
+#header-name {
+    float: none;
+    margin: 0 auto;
+}
+
+#header-caption {
+    float: none;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 600px){
+    .rwd-break { display: none; }
+}
+
 #my-image {
-    max-width: 25%;
     border: 5px solid #dddfd4;   
-    margin-bottom: 5%;
+    margin-bottom: 75px;
 }
 
 .bg-grey {
@@ -24,7 +41,7 @@
 }
 
 #about {
-    background: url("images/UWcampus.jpg") no-repeat;
+    background: no-repeat;
     background-size: cover;
     padding: 60px 50px;
     color: black;
